@@ -13,15 +13,8 @@ export const usePersonList = (): {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                setLoading(true);
                 const people = await GroupService.fetchPeople();
 
-                // Sort by name
-                people.sort((a, b) => {
-                    if (a.name < b.name) return -1;
-                    if (a.name > b.name) return 1;
-                    return 0;
-                });
                 setPeople(people);
                 setLoading(false);
             } catch (e) {
