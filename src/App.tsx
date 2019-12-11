@@ -5,10 +5,10 @@ import { ErrorBoundary, Loading } from '@nareshbhatia/react-force';
 import { createBrowserHistory } from 'history';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from '@apollo/react-hooks';
+import { HistoryAdapter, RouterView } from 'mobx-state-router';
 
 import { theme } from './components';
-import { HomePage } from './pages';
-import { HistoryAdapter, RouterView } from 'mobx-state-router';
+import { HomePage, AppPage } from './pages';
 import { RootStore } from './stores';
 import { RootContext } from './contexts';
 
@@ -25,7 +25,8 @@ const historyAdapter = new HistoryAdapter(rootStore.routerStore, createBrowserHi
 historyAdapter.observeRouterStateChanges();
 
 export const viewMap = {
-    home: <HomePage />
+    home: <HomePage />,
+    app: <AppPage />
 };
 
 export const App: React.FC = () => {

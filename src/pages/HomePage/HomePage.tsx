@@ -1,18 +1,20 @@
-import React, { useState } from 'react';
+import React, { FC, useContext } from 'react';
 import Container from '@material-ui/core/Container';
 import { makeStyles, Theme } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
 import { ViewVerticalContainer } from '@nareshbhatia/react-force';
 import GoogleLogin from 'react-google-login';
-import { useQuery, useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
+
 import { GoogleWebLogin } from '../../graphql-types';
 import { login } from './__generated__/login';
+import { RootStore } from '../../stores';
+import { RootContext } from '../../contexts';
 
 const useStyles = makeStyles((theme: Theme) => ({
     container: {
-        paddingTop: theme.spacing(8),
-        paddingBottom: theme.spacing(4)
+        textAlign: 'center',
+        paddingTop: theme.spacing(8)
     },
     section: {
         marginTop: theme.spacing(3)
@@ -31,7 +33,13 @@ const AUTH = gql`
     }
 `;
 
-export const HomePage = () => {
+export interface HomeProps {
+    rootStore?: RootStore;
+}
+
+export const HomePage: FC<HomeProps> = () => {
+    const { routerStore } = useContext(RootContext);
+
     const classes = useStyles();
     const [login, { data, error }] = useMutation<login, { info: GoogleWebLogin }>(AUTH);
 
@@ -59,6 +67,7 @@ export const HomePage = () => {
                 }
             } = data;
             console.log(jwt);
+            routerStore.goTo('app');
         } catch (error) {
             // console.log(error);
         }
@@ -74,9 +83,6 @@ export const HomePage = () => {
                     onFailure={response}
                     cookiePolicy={'single_host_origin'}
                 />
-                <Typography component="h1" variant="h3" color="textSecondary">
-                    Groups
-                </Typography>
             </Container>
         </ViewVerticalContainer>
     );
