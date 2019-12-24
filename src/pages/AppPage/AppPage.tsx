@@ -1,6 +1,13 @@
 import React, { FC } from 'react';
-import { AppBar } from '../../components';
+import { ViewVerticalContainer } from '@nareshbhatia/react-force';
+
+import { AppBar, NewIdea } from '../../components';
 
 export const AppPage: FC = () => {
-    return <AppBar />;
+    return (
+        <ViewVerticalContainer>
+            <AppBar />
+            <NewIdea />
+        </ViewVerticalContainer>
+    );
 };

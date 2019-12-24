@@ -45,7 +45,7 @@ export const HomePage: FC<HomeProps> = () => {
 
     console.log(data, error);
 
-    const response = async (info: any) => {
+    const response = async (info: any): Promise<void> => {
         try {
             const selected = {
                 accessToken: info.accessToken,
@@ -63,7 +63,7 @@ export const HomePage: FC<HomeProps> = () => {
             if (!data?.login) return;
             const {
                 login: {
-                    authData: { jwt, userId }
+                    authData: { jwt }
                 }
             } = data;
             console.log(jwt);
