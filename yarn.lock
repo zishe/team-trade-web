@@ -1839,10 +1839,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@material-ui/core@4.7.2":
-  version "4.7.2"
-  resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.7.2.tgz#b4396eded7c85214c43c17a18bad66e94742f92c"
-  integrity sha512-ZbeO6xshTEHcMU2jMNjBY26u9p5ILQFj0y7HvOPZ9WT6POaN6qNKYX2PdXnnRDE1MpN8W2K1cxM4KKkiYWNkCQ==
+"@material-ui/core@4.8.1":
+  version "4.8.1"
+  resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.8.1.tgz#a2451739e2b4a478f8f9f364a5a87b8896c76b97"
+  integrity sha512-fAIysk8JiV+TbqI7uWo/kunmwPROEz9JvE2gE4xmAgLikF7rfoodhFL6aV5clIzWelpdRbcOUYfGaq2yAnjOoA==
   dependencies:
     "@babel/runtime" "^7.4.4"
     "@material-ui/styles" "^4.7.1"
@@ -1866,10 +1866,10 @@
   dependencies:
     "@babel/runtime" "^7.4.4"
 
-"@material-ui/lab@4.0.0-alpha.36":
-  version "4.0.0-alpha.36"
-  resolved "https://registry.yarnpkg.com/@material-ui/lab/-/lab-4.0.0-alpha.36.tgz#85420c59c88a9620bd65fed530c288c04afee26a"
-  integrity sha512-T5dMW4RYmjH/VWjXui5uBPcqfMsKv5Ig/uX77UwTQts2CS6YeNF7619WtEm6yl9kV2O5CVpRsPw1ulrt2T2Hrg==
+"@material-ui/lab@4.0.0-alpha.37":
+  version "4.0.0-alpha.37"
+  resolved "https://registry.yarnpkg.com/@material-ui/lab/-/lab-4.0.0-alpha.37.tgz#194bab4ecf77d19a23514ea3ab71566c92a9b3a1"
+  integrity sha512-OebQZqKYDO44vER5ZDHDjXF9/rq0Hqq5IRfgKwM1JzlzAZINd6RPX0xrh78psZ1mOWsgAteCY6/zPSHRPXAkqw==
   dependencies:
     "@babel/runtime" "^7.4.4"
     "@material-ui/utils" "^4.7.1"
