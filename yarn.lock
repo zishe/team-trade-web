@@ -1932,10 +1932,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@nareshbhatia/react-force@1.19.2":
-  version "1.19.2"
-  resolved "https://registry.yarnpkg.com/@nareshbhatia/react-force/-/react-force-1.19.2.tgz#61969444510dc1f05c938e29c28424c3001934d6"
-  integrity sha512-Mi+Bf6iqEfwKvqHV+Rqxvyq1id7T3dMWwk/HgOKZnGQ4R4gnysHEIHOGphBETtiOu8cPcT+7APJaCGENhAg6/w==
+"@nareshbhatia/react-force@1.19.3":
+  version "1.19.3"
+  resolved "https://registry.yarnpkg.com/@nareshbhatia/react-force/-/react-force-1.19.3.tgz#ac45f08a75508e607ce7402cfbb9e7107dafa957"
+  integrity sha512-PTR1VvXSR7cUWN48wSUfISRZnEbuqGyc7Hv9qc9kxnV/uu9f7hcyOz0Itie1XMxa4ZfdPYfDbRzjWKz0a8uuBA==
 
 "@nodelib/fs.stat@^1.1.2":
   version "1.1.3"
