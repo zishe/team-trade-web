@@ -4940,14 +4940,14 @@ d3-shape@^1.2.0:
   dependencies:
     d3-path "1"
 
-d3-time-format@2, d3-time-format@^2.1.1, d3-time-format@^2.2.2:
+d3-time-format@2, d3-time-format@2.2.2, d3-time-format@^2.1.1:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/d3-time-format/-/d3-time-format-2.2.2.tgz#187597ffc6a0f37cb36bb7a1d7167cdc887ecda0"
   integrity sha512-pweL2Ri2wqMY+wlW/wpkl8T3CUzKAha8S9nmiQlMABab8r5MJN0PD1V4YyRNVaKQfeh4Z0+VO70TLw6ESVOYzw==
   dependencies:
     d3-time "1"
 
-d3-time@1, d3-time@^1.0.8, d3-time@^1.1.0:
+d3-time@1, d3-time@1.1.0, d3-time@^1.0.8:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/d3-time/-/d3-time-1.1.0.tgz#b1e19d307dae9c900b7e5b25ffc5dcc249a8a0f1"
   integrity sha512-Xh0isrZ5rPYYdqhAVk8VLnMEidhz5aP7htAADH6MfzgmmicPkTo8LhkLxci61/lCB7n7UmE3bN0leRt+qvkLxA==
@@ -7063,7 +7063,7 @@ ieee754@^1.1.4:
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.13.tgz#ec168558e95aa181fd87d37f55c32bbcb6708b84"
   integrity sha512-4vf7I2LYV/HaWerSo3XmlMkp5eZ83i+/CDluXi/IGTs/O1sejBNhTtnxzmRZfvOUqj7lZjqHkeTvpgSFDlWZTg==
 
-iex-cloud@^2.1.1:
+iex-cloud@2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/iex-cloud/-/iex-cloud-2.1.1.tgz#19d068f570fbe672e95e339df2bd500e6d2a59e9"
   integrity sha512-X8IiRF8ch0nC1JkRY7Eoxn6nRU9rF2v53nAMs3GUmLpMHqk+78twCpvtaTAZPrEi/nCahSXluLz/oiriBmpIuQ==
@@ -11141,7 +11141,7 @@ react-scripts@3.3.0:
   optionalDependencies:
     fsevents "2.1.2"
 
-react-stockcharts@^0.7.8:
+react-stockcharts@0.7.8:
   version "0.7.8"
   resolved "https://registry.yarnpkg.com/react-stockcharts/-/react-stockcharts-0.7.8.tgz#d127a113479835be1a0ef7c37e5b5808740b9803"
   integrity sha512-swtnTFrp8+82dDGhuI3gg2qvO7irU/dz210k3KtmRiZGMwrmdWBsfYGRrctKRK2OSm+C7G4WgbhKo0pdfFlwyQ==
