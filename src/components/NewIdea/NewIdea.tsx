@@ -1,9 +1,18 @@
 import React, { useState } from 'react';
-import { SymbolSearch } from '../SymbolSearch';
-import { Typography, makeStyles, createStyles, Theme, Grid, Paper, Fab } from '@material-ui/core';
-import AddIcon from '@material-ui/icons/Add';
+import { SymbolSearch, StockSymbol } from '../SymbolSearch';
+import {
+    Typography,
+    makeStyles,
+    createStyles,
+    Theme,
+    Grid,
+    Paper,
+    Button,
+    Icon
+} from '@material-ui/core';
 import { BuySell } from './BuySell';
 import { Period } from './Period';
+import { gql } from 'apollo-boost';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -14,13 +23,18 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         wrapper: {
             flex: 1
+        },
+        button: {
+            marginTop: 60,
+            width: 300,
+            height: 50
         }
     })
 );
 
 export const NewIdea = () => {
     const classes = useStyles();
-    const [symbol, setSymbol] = useState<symbol | null>(null);
+    const [symbol, setSymbol] = useState<StockSymbol | null>(null);
     const [buy, setBuy] = useState(true);
     const [period, setPeriod] = useState<Period>('intraday');
 
@@ -28,22 +42,37 @@ export const NewIdea = () => {
         <div className={classes.root}>
             <div className={classes.wrapper}>
                 <Paper style={{ padding: 40 }}>
-                    <Typography variant="h2">New Idea</Typography>
-                    <div style={{ flexGrow: 1, marginTop: 60 }}>
+                    <div style={{ flexGrow: 1 }}>
                         <Grid container spacing={0}>
-                            <Grid item xs={4}>
+                            <Grid item xs={6} md={4} lg={3}>
+                                <Typography variant="h2" style={{ marginBottom: 50 }}>
+                                    New Idea
+                                </Typography>
                                 <SymbolSearch symbol={symbol} setSymbol={setSymbol} />
-                            </Grid>
-                            <Grid item xs={3} style={{}}>
                                 <BuySell buy={buy} setBuy={setBuy} />
-                            </Grid>
-                            <Grid item xs={3}>
                                 <Period period={period} setPeriod={setPeriod} />
+                                <Button
+                                    variant="contained"
+                                    color="primary"
+                                    size="large"
+                                    className={classes.button}
+                                    endIcon={<Icon>send</Icon>}
+                                >
+                                    POST
+                                </Button>
                             </Grid>
-                            <Grid item xs={2}>
-                                <Fab color="secondary" aria-label="add">
-                                    <AddIcon />
-                                </Fab>
+                            <Grid item xs={5} md={8} lg={9} style={{}}>
+                                {/* <StockChart /> */}
+                                <Paper
+                                    elevation={0}
+                                    square
+                                    style={{
+                                        backgroundColor: '#E5E5E5',
+                                        width: 'calc(100% - 50px)',
+                                        marginLeft: 50,
+                                        height: 500
+                                    }}
+                                />
                             </Grid>
                         </Grid>
                     </div>
@@ -52,3 +81,27 @@ export const NewIdea = () => {
         </div>
     );
 };
+
+const CHART = gql`
+    query chart($ticker: String!) {
+        chart(ticker: $ticker) {
+            symbol
+            exchange
+            name
+            date
+            type
+            iexId
+            region
+            currency
+        }
+    }
+`;
+
+// function StockChart = () => {
+//     data
+//     return (
+//         <TypeChooser>
+//             {type => <Chart type={type} data={data} />}
+//         </TypeChooser>
+//     )
+// }

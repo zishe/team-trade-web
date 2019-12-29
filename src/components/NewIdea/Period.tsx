@@ -13,7 +13,7 @@ export const Period = ({ period, setPeriod }: PeriodProps) => {
         setPeriod(event.target.value as Period);
     };
     return (
-        <FormControl variant="outlined">
+        <FormControl variant="outlined" style={{ display: 'block', marginTop: 40 }}>
             <InputLabel id="period-label">Period</InputLabel>
             <Select
                 id="select"
@@ -21,7 +21,7 @@ export const Period = ({ period, setPeriod }: PeriodProps) => {
                 onChange={handleChange}
                 labelId="period-label"
                 labelWidth={48}
-                style={{ width: 200 }}
+                style={{ width: 300 }}
             >
                 <MenuItem value={'intraday'}>Intraday</MenuItem>
                 <MenuItem value={'days'}>Days</MenuItem>

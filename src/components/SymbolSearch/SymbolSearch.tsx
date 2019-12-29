@@ -26,23 +26,26 @@ const SEARCH = gql`
     }
 `;
 
-export type Symbol = search_search;
+export type StockSymbol = search_search;
 
 export const SymbolSearch = ({
     symbol,
     setSymbol
 }: {
-    symbol: symbol | null;
-    setSymbol: (symbol: symbol) => void;
+    symbol: StockSymbol | null;
+    setSymbol: (symbol: StockSymbol) => void;
 }) => {
     const classes = useStyles();
 
-    const [options, setOptions] = useState<symbol[]>([]);
+    const [options, setOptions] = useState<StockSymbol[]>([]);
     const [fragment, setFragment] = useState('');
 
-    const { loading, error, data } = useQuery<{ search: symbol[] }, { fragment: string }>(SEARCH, {
-        variables: { fragment }
-    });
+    const { loading, error, data } = useQuery<{ search: StockSymbol[] }, { fragment: string }>(
+        SEARCH,
+        {
+            variables: { fragment }
+        }
+    );
     // console.log(data);
 
     useEffect(() => {
@@ -65,18 +68,18 @@ export const SymbolSearch = ({
                 renderInput={params => (
                     <TextField
                         {...params}
-                        label="Find a stock"
+                        label="Symbol"
                         variant="outlined"
                         style={{ borderColor: '#444' }}
                         fullWidth
                         onChange={handleChange}
-                        onFocus={() => {}}
+                        // onFocus={() => {}}
                         // inputProps={{ autoCorrect: 'disabled' }}
                     />
                 )}
                 onChange={(e, value) => {
                     // console.log(value);
-                    setSymbol(value as symbol);
+                    setSymbol(value as StockSymbol);
                 }}
                 renderOption={option => {
                     // const symbol = option as SymbolDTO;
