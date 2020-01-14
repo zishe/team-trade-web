@@ -28,7 +28,7 @@
     "@material-ui/icons": "4.5.1",
     "@material-ui/lab": "4.0.0-alpha.39",
     "@nareshbhatia/react-force": "1.19.3",
-    "@types/history": "4.7.3",
+    "@types/history": "4.7.4",
     "apollo-boost": "0.4.7",
     "axios": "0.19.1",
     "classnames": "2.2.6",
