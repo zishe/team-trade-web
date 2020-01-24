@@ -8895,10 +8895,10 @@ methods@~1.1.2:
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
-micro-observables@1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/micro-observables/-/micro-observables-1.2.2.tgz#f3e9b35bbfc04fd3c8b1b496b7d58a7b969a1489"
-  integrity sha512-wsxHkx74KQYcfOum1ODktPcw4ck6FnynX2OwIaN9qQZvRsahNoPJxJSQGVpr47g4LNx9hNOyD4BVUmuumI0UEg==
+micro-observables@1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/micro-observables/-/micro-observables-1.2.3.tgz#b3ea1eb52cc58e4d2a6ee0b31e23b7151079ddc5"
+  integrity sha512-yujJK702sqkf1WSLChKLD+Ru4Kp0FZrcwNMzIDl6IKKzHxX/PKkHO3noBAkUBgI/Xda5gZxktb07X7Pp4Lnhog==
 
 microevent.ts@~0.1.1:
   version "0.1.1"
