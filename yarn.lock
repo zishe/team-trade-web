@@ -1940,10 +1940,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@nareshbhatia/react-force@1.19.3":
-  version "1.19.3"
-  resolved "https://registry.yarnpkg.com/@nareshbhatia/react-force/-/react-force-1.19.3.tgz#ac45f08a75508e607ce7402cfbb9e7107dafa957"
-  integrity sha512-PTR1VvXSR7cUWN48wSUfISRZnEbuqGyc7Hv9qc9kxnV/uu9f7hcyOz0Itie1XMxa4ZfdPYfDbRzjWKz0a8uuBA==
+"@nareshbhatia/react-force@1.25.0":
+  version "1.25.0"
+  resolved "https://registry.yarnpkg.com/@nareshbhatia/react-force/-/react-force-1.25.0.tgz#ca36a452d93e085b7dd9d28508eedd6dec245314"
+  integrity sha512-ajwDkfqXSAUZ2adxXjogYMycG9QNNkrFjIonLovhEmieaUaRctqN/kscK2JAYhx+FEW0we929rx315didZ4eYQ==
 
 "@nodelib/fs.stat@^1.1.2":
   version "1.1.3"
