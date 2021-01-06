@@ -8927,10 +8927,10 @@ methods@~1.1.2:
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
-micro-observables@1.2.4:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/micro-observables/-/micro-observables-1.2.4.tgz#69d8fdc24a0f1dbd25f306d9fc0739d1c1895c28"
-  integrity sha512-+bAxf4+Fc5MZA5pfTh10h9zARzEWOfc+Vy3w9F9Ie1vrK3f2UTo6jxd9iYGYcdnapkisT8RUAY8dgpQaUqxfhQ==
+micro-observables@1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/micro-observables/-/micro-observables-1.7.0.tgz#7c7709d66bb5391f398c917f30e4ec9109858512"
+  integrity sha512-FubGqb6QaewjOm1tuz/kf8/Hz/RoG9UdihiJlfryLNtrHefQLYNWtLmKOrtli6G4+QCdeyeQmfcTZ3HGN2G04A==
 
 microevent.ts@~0.1.1:
   version "0.1.1"
